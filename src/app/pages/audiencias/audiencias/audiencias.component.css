@@ -1,0 +1,19 @@
+div div.bloco{ 
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    
+    background-color:darkgray;
+    margin: 20px;
+    
+    
+}
+
+div li{
+    list-style: none;
+}
+
+div li a{
+    color: tomato;
+}
