@@ -12,6 +12,7 @@ import { CriminalComponent } from './pages/audiencias/criminal/criminal.componen
 import { ConciliacaoComponent } from './pages/audiencias/conciliacao/conciliacao.component';
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
 import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popular.component';
+import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popul
     CriminalComponent,
     ConciliacaoComponent,
     TrabalhoComponent,
-    JuriPopularComponent
+    JuriPopularComponent,
+    Cadastro2Component
   ],
   imports: [
     BrowserModule,

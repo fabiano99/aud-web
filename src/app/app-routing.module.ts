@@ -9,6 +9,7 @@ import { ConciliacaoComponent } from './pages/audiencias/conciliacao/conciliacao
 import { CriminalComponent } from './pages/audiencias/criminal/criminal.component';
 import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popular.component';
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
+import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'audiencias/conciliacao', component: ConciliacaoComponent},
   {path: 'audiencias/criminal', component: CriminalComponent},
   {path: 'audiencias/juri-popular', component: JuriPopularComponent},
-  {path: 'audiencias/trabalho', component: TrabalhoComponent}
+  {path: 'audiencias/trabalho', component: TrabalhoComponent},
+  {path: 'cadastro2', component: Cadastro2Component}
 ];
 
 @NgModule({
