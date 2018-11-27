@@ -13,6 +13,7 @@ import { ConciliacaoComponent } from './pages/audiencias/conciliacao/conciliacao
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
 import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popular.component';
 import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
     ConciliacaoComponent,
     TrabalhoComponent,
     JuriPopularComponent,
-    Cadastro2Component
+    Cadastro2Component,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,9 @@ import { CriminalComponent } from './pages/audiencias/criminal/criminal.componen
 import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popular.component';
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
 import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+
+
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -21,7 +24,9 @@ const routes: Routes = [
   {path: 'audiencias/criminal', component: CriminalComponent},
   {path: 'audiencias/juri-popular', component: JuriPopularComponent},
   {path: 'audiencias/trabalho', component: TrabalhoComponent},
-  {path: 'cadastro2', component: Cadastro2Component}
+  {path: 'cadastro2', component: Cadastro2Component},
+  {path: 'cadastro', component: CadastroComponent}
+  
 ];
 
 @NgModule({

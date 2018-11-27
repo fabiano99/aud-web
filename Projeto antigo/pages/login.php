@@ -84,7 +84,7 @@
       <div class="col-sm-3 col-lg-1"></div>
       <div class="col-sm-9 col-md-5 col-lg-5     ">
       <div >
-      <a href="Escolha_Audiencia.php" >
+      <a href="#" >
       </div>
       <button class="btn btn-lg btn-primary btn-block link" type="button">Logar</button></a>
     </div>
