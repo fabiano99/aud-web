@@ -11,6 +11,7 @@ import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popul
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
 import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { VideoComponent } from './pages/video/video.component';
 
 
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'audiencias/juri-popular', component: JuriPopularComponent},
   {path: 'audiencias/trabalho', component: TrabalhoComponent},
   {path: 'cadastro2', component: Cadastro2Component},
-  {path: 'cadastro', component: CadastroComponent}
+  {path: 'cadastro', component: CadastroComponent},
+  {path: 'video', component: VideoComponent}
   
 ];
 

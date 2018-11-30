@@ -89,15 +89,24 @@ Juiz Presidente do ato:  José de Andrade Neto
 
 
 
+<div class="row">
+      <div class="container">
+        <div class="card w-75 mt-5">
+        <div class="card-body">
 
-<div class="container">
-  <div class="card w-75 mt-5">
-  <div class="card-body">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dmIVzqVDpu0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          
+      </div>
+      </div>
+      <div class="card w-75 mt-5">
+        <div class="card-body">
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dmIVzqVDpu0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    
-</div>
-</div>
+       </div>
+      </div>
+
+
+
+  </div>
 
 
 

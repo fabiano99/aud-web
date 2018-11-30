@@ -14,6 +14,7 @@ import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.componen
 import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popular.component';
 import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { VideoComponent } from './pages/video/video.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
     TrabalhoComponent,
     JuriPopularComponent,
     Cadastro2Component,
-    CadastroComponent
+    CadastroComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
