@@ -11,8 +11,8 @@ import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popul
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
 
 const routes: Routes = [
-  {path:'home', component: HomeComponent},
-  {path:'login', component:LoginComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'audiencias/audiencias', component: AudienciasComponent},
   {path: 'audiencias/civil', component: CivilComponent},

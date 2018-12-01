@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,10 @@ import { CriminalComponent } from './pages/audiencias/criminal/criminal.componen
 import { ConciliacaoComponent } from './pages/audiencias/conciliacao/conciliacao.component';
 import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.component';
 import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popular.component';
+import { CursosComponent } from './pages/admin/cursos/cursos.component';
+import { VideosComponent } from './pages/admin/videos/videos.component';
+import { HttpModule } from '@angular/http';
+import { AudienciasService } from './pages/audiencias/audiencias/audiencias.service';
 
 @NgModule({
   declarations: [
@@ -24,13 +29,17 @@ import { JuriPopularComponent } from './pages/audiencias/juri-popular/juri-popul
     CriminalComponent,
     ConciliacaoComponent,
     TrabalhoComponent,
-    JuriPopularComponent
+    JuriPopularComponent,
+    CursosComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AudienciasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
