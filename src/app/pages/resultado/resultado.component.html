@@ -1,0 +1,19 @@
+
+  <div *ngIf = "acertos >= 7 " class="card border-success mb-3" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Aprovado</h5>
+      <p class="card-text">Você acertou {{acertos*10}}% das questões</p>
+      <p class="card-text">{{mensagem}}</p>
+      <a *ngIf ="!duplicado" (click) = "salvarCertificado()"class="btn btn-success" style="color: white;">Salvar</a>
+    </div>
+  </div>
+  <div *ngIf = "acertos < 7" class="card border-danger mb-3" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body text-danger">
+      <h5 class="card-title">Reprovado</h5>
+      <p class="card-text">Você acertou {{acertos*10}}% das questões</p>
+      <p class="card-text">Pontuação insuficiente. Assista o vídeo novamente, faça anotações relevantes e volte a responder o questionário!</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,37 @@
+<div class="card-deck col-sm-12">
+
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">Nome: {{ usuario.nome }}</h5>
+        <p class="card-text">Email: {{ usuario.email }}</p>
+        <p class="card-text">Instituição de Ensino: {{ usuario.instituicao }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+<div class="row">
+
+    <div *ngFor = "let certificado of certificados" class="card-deck col-sm-4" style="margin: 7px;">
+
+      <div class="card">
+
+        <div class="card-body">
+         
+          <h5 class="card-title">Titulo: {{ certificado.titulo }}</h5>
+          <p class="card-text">Acertos: {{certificado.acertos}}</p>
+         
+        </div>
+
+        <div class="card-footer">
+          <small class="text-muted">Carga Horária: {{certificado.horas}}</small>
+        </div>
+
+      </div>
+
+    </div>
+     
+</div>
+  
