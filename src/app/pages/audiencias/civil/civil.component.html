@@ -1,35 +1,40 @@
+<ul class="nav nav-tabs">
+    <li *ngFor = "let tipo of tipos" class="nav-item">
+        <a class="nav-link " [id]=tipo.tipo  href="#" routerLink="/audiencias/civil" (click) = "listarVideos('Civel', tipo.tipo)" >{{tipo.tipo}}</a>
+    </li>
+
+</ul>
+
 
     <div class="row  justify-content-center mt-3">
       <h1>
-          <p class="font-italic">Audiências Cívis</p>
+          <p class="font-italic">Audiências Cíveis</p>
+
       </h1>
+      
     </div>
-<div class="card text-center">
+<div *ngFor = "let video of videos" class="row">
+
+    <div class="card-deck col-sm-4">
+
+      <div class="card">
+
+        <img class="card-img-top" [src]=video.imagem  (click) = "escolherVideo(video._id)">
+        
+        <div class="card-body">
+          <h5 class="card-title">Titulo: {{video.titulo}}</h5>
+          <p class="card-text">Reu: {{video.reu}}</p>
+          <p class="card-text">Juiz: {{video.juiz}}</p>
+        </div>
+
+        <div class="card-footer">
+          <small class="text-muted">Carga Horária: {{video.horas}}</small>
+        </div>
+
+      </div>
+
+    </div>
      
-     <div class="card" routerLink="#">
-        <div class="card-body">
-          <h4 class="card-title ">Audiência de tentativa de conciliação ou mediação</h4>
-          <p class="card-text"> Descrição: With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-     </div>
-     <div class="card" routerLink="#">
-        <div class="card-body">
-          <h4 class="card-title ">Audiência de Instrução</h4>
-          <p class="card-text"> Descrição: With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-     </div>
-     <div class="card" routerLink="#">
-        <div class="card-body">
-          <h4 class="card-title ">Audiência de saneamento</h4>
-          <p class="card-text"> Descrição: With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-     </div>
-     <div class="card" routerLink="#">
-        <div class="card-body">
-          <h4 class="card-title ">Audiência de Justificação</h4>
-          <p class="card-text"> Descrição: With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-     </div>
 </div>
   
 

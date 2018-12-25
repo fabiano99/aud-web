@@ -20,6 +20,10 @@ import { AudienciasService } from './pages/audiencias/audiencias/audiencias.serv
 import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { VideoComponent } from './pages/video/video.component';
+import { AdminService } from './pages/admin/admin.service';
+import { QuestionarioComponent } from './pages/questionario/questionario.component';
+import { ResultadoComponent } from './pages/resultado/resultado.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { VideoComponent } from './pages/video/video.component';
     VideosComponent,
     Cadastro2Component,
     CadastroComponent,
-    VideoComponent
+    VideoComponent,
+    QuestionarioComponent,
+    ResultadoComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,7 @@ import { VideoComponent } from './pages/video/video.component';
     HttpModule,
     FormsModule
   ],
-  providers: [AudienciasService],
+  providers: [AudienciasService, AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

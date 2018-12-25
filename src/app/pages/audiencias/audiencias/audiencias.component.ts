@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
 import {AudienciasService} from './audiencias.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-audiencias',
@@ -9,17 +10,31 @@ import {AudienciasService} from './audiencias.service';
 })
 export class AudienciasComponent implements OnInit {
 
-  private  usuarios: any[];
-  constructor(private audienciaService: AudienciasService) { }
+  private  cursos: any[];
 
+  private abaAtiva: string;
+  constructor(private audienciaService: AudienciasService, private router: Router) { }
+
+  rota;
   ngOnInit() {
+    if (!localStorage.length) {
+      this.router.navigate(['/login']);
+    }
+    this.getCursos();
   }
 
-  user() {
-    this.audienciaService.getUsers().subscribe((data) => {
-      this.usuarios = data;
+  getCursos() {
+    this.audienciaService.getCourses().subscribe((data) => {
+      this.cursos = data;
       console.log(data);
     });
 
   }
+
+  setRota(rota) {
+
+    this.rota = "/audiencias/" + rota;
+  }
 }
+
+

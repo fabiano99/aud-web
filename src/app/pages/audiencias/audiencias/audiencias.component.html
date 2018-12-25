@@ -1,73 +1,25 @@
 
 
 <div class="container  justify-content-center">
+
     <div class="row  justify-content-center mt-3">
       <h1>
           <p class="font-italic">Audiências</p>
       </h1>
     </div>
-    <div class="row  justify-content-center mt-3">
-  <div class="card border-secondary mx-5  " style="max-width: 15rem;">
-    <div class="card-header" routerLink="/audiencias/civil">Cível</div>
-    <div class="card-body text-secondary">
-      
-      <p class="card-text">Em observância ao art. 368 do Novo Código de Processo Civil, nota-se que a audiência será pública, ressalvadas as exceções legais, devendo as sessões serem realizadas de portas abertas. </p>
-    </div>
-  </div>
 
-  <div class="card border-secondary mx-5  " style="max-width: 15rem;">
-    <div class="card-header" routerLink="/audiencias/conciliacao">Conciliação</div>
-    <div class="card-body text-secondary">
-      
-      <p class="card-text">A audiência de conciliação é vista como uma maneira rápida de resolver problemas por meio de acordos amigáveis entre as partes envolvidas.</p>
-    </div>
-  </div>
-<<<<<<< HEAD
-
-  <div class="bloco">
-    <li> <a routerLink="/audiencias/criminal">Criminal</a></li>
-  </div>
-
-  <div class="bloco">
-    <li  > <a (click) = "user()" routerLink="/audiencias/juri-popular">Juri Popular</a></li>
-  </div>
-
-
-  <div class="bloco">
-    <li> <a routerLink="/audiencias/trabalho">Trabalho</a></li>
-=======
-  
-  <div class="card border-secondary mx-5   " style="max-width: 15rem;">
-      <div class="card-header" routerLink="/audiencias/criminal">Criminal</div>
-      <div class="card-body text-secondary">
-        
-        <p class="card-text"> A audiência  Criminal é o principal ato de um processo, seja de procedimento ordinário, sumário ou sumaríssimo, uma vez que, é nela, que serão ouvidas as testemunhas, a vítima, os peritos e, o acusado</p>
-      </div>
-    </div>
-
-    </div>
-    <div class="container  justify-content-center ">
-    <div class="row  justify-content-center">
-        <div class="card border-secondary mx-5 mt-5  " style="max-width: 15rem;">
-            <div class="card-header" routerLink="/audiencias/juri-popular">Juri Popular</div>
-            <div class="card-body text-secondary">
-              
-              <p class="card-text">A audiência de conciliação é vista como uma maneira rápida de resolver problemas por meio de acordos amigáveis entre as partes envolvidas.</p>
+    <div class="row">
+        <div *ngFor = "let curso of cursos"   class="col-sm-6" >
+          <div [routerLink]=curso.titulo class="card" style="height: 200px; margin: 5px;">
+            <div class="card-body">
+              <h5 class="card-header">{{curso.titulo}}</h5>
+              <p class="card-text"> {{curso.descricao}} </p>
             </div>
           </div>
+        </div>
 
-          <div class="card border-secondary mx-5 mt-5  " style="max-width: 15rem;">
-              <div class="card-header" routerLink="/audiencias/trabalho">Trabalho</div>
-              <div class="card-body text-secondary">
-                
-                <p class="card-text">As audiências trabalhistas são públicas e realizadas em dias úteis previamente fixados,
-                    entre 8 (oito) e 18 (dezoito) horas, não podendo ultrapassar 5 (cinco) horas seguidas,
-                    salvo quando houver matéria urgente..</p>
-              </div>
-            </div>
-    </div>
->>>>>>> ef15a0085deda1411b8fd00b4faadb7523cdafd8
-  </div>
+      </div>
+
 
 </div>
 

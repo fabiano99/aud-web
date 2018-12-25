@@ -12,6 +12,9 @@ import { TrabalhoComponent } from './pages/audiencias/trabalho/trabalho.componen
 import { Cadastro2Component } from './pages/cadastro2/cadastro2.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { VideoComponent } from './pages/video/video.component';
+import { QuestionarioComponent } from './pages/questionario/questionario.component';
+import { ResultadoComponent } from './pages/resultado/resultado.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 
 
@@ -19,16 +22,19 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'audiencias/audiencias', component: AudienciasComponent},
-  {path: 'audiencias/civil', component: CivilComponent},
+  {path: 'audiencias', component: AudienciasComponent},
+  {path: 'audiencias/Civel', component: CivilComponent},
   {path: 'audiencias/conciliacao', component: ConciliacaoComponent},
-  {path: 'audiencias/criminal', component: CriminalComponent},
-  {path: 'audiencias/juri-popular', component: JuriPopularComponent},
-  {path: 'audiencias/trabalho', component: TrabalhoComponent},
+  {path: 'audiencias/Criminal', component: CriminalComponent},
+  {path: 'audiencias/Juri-Popular', component: JuriPopularComponent},
+  {path: 'audiencias/Trabalho', component: TrabalhoComponent},
   {path: 'cadastro2', component: Cadastro2Component},
   {path: 'cadastro', component: CadastroComponent},
-  {path: 'video', component: VideoComponent}
-  
+  {path: 'video', component: VideoComponent},
+  {path: 'questionario', component: QuestionarioComponent},
+  {path: 'resultado', component: ResultadoComponent},
+  {path: 'perfil', component: PerfilComponent}
+
 ];
 
 @NgModule({
