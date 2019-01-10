@@ -1,27 +1,10 @@
 # AudWeb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+Este projeto foi desenvolvido com Angular 7
 
-## Development server
+# Backend
+O backend encontra-se disponível no endereço https://github.com/fabiano99/audweb-backend
+Desenvolvido seguindo os padrões RESTful usando restify, mongoDB como banco de dados e mongoose.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Objetivo
+Projeto desenvolvido em ambiente acadêmico com intuito de simular um portal da área de direito para assistir audiências online e ao final de cada video responder questionário específico do vídeo comprovando conhecimento.
